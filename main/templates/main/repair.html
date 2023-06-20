@@ -1,0 +1,126 @@
+{% extends 'main/layout.html' %}
+{% load static %}
+
+{% block title %}АрхСтиль - Ремонт и отделка помещений{% endblock %}
+
+{% block content %}
+
+<div class="secondary_page">
+    <div class="header_block_1_contacts">
+        <header>
+            <div class="header_1_secondary">
+                <a href="{% url 'services' %}" class="header_text_secondary">Услуги</a>
+                <a href="{% url 'repair' %}" class="header_text_secondary">Ремонт и отделка</a>
+                <a href="{% url 'projects' %}" class="header_text_secondary">Проекты</a>
+
+            </div>
+            <a href="{% url 'index' %}">
+                <div class="block_logo">
+                    <img src="{% static 'main/img/main_logo_black.png' %}">
+                </div>
+            </a>
+            <div class="header_2_secondary">
+                <a href="{% url 'reviews' %}" class="header_text_secondary">Отзывы</a>
+                <a href="{% url 'contacts' %}" class="header_text_secondary">Контакты</a>
+                <a href="{% url 'designing' %}" class="header_text_secondary">Проектирование домов</a>
+            </div>
+        </header>
+    </div>
+
+    <div class="main_container_reviews">
+        <div class="block_text_page_contacts">
+            <p class="text_page_contacts3"><a href="{% url 'index' %}">Главная</a> / Ремонт и отделка</p>
+            <h1 class="title_h1b">РЕМОНТ И ОТДЕЛКА ПОМЕЩЕНИЙ</h1>
+        </div>
+
+        <div class="block_content_repair">
+            <div>
+                <img src="{% static 'main/img/img_repair_1.png' %}" class="img_repair">
+            </div>
+            <div>
+                <div class="block_text_repair">
+                    <h3>Главное в нашем деле — профессионализм!</h3>
+                    <p class="text_page_repair">Знакомьтесь, Мелешин Алексей — он отвечает в нашей компании за идеальный
+                        результат.
+                        Его стаж в области строительных и отделочных работ — более 35 лет.</p>
+                    <p class="text_page_repair">Когда речь идет о вполнении комплекса технически сложных работ, приятно
+                        иметь дело с теми,
+                        кто все знает наперед. Вы можете довериться и получать удовольствие от результата.</p>
+                </div>
+            </div>
+        </div>
+        <div class="block_content_repair_gallery">
+            <div class="block_text_repair">
+                <h3>Воплощаем любые смелые идеи.</h3>
+                <p class="text_page_repair">Нам скучно делать обычные квартиры.</p>
+                <p class="text_page_repair">Мы беремся за большие, сложные и интересные проекты по двум причинам:</p>
+                <ul>
+                    <li>Мы профессионалы.</li>
+                    <li>Каждый раз мы становимся еще лучше.</li>
+                </ul>
+                <h3>Капитальный ремонт квартиры по фиксированной цене</h3>
+                <p class="text_page_repair">В большинстве случаев, заказывая услуги по отделке помещений, вы можете
+                    столкнуться с множеством подводных камней, за которые приходится доплачивать. Позвольте себе
+                    роскошь по доступной цене.</p>
+                <p class="text_page_repair">Еще на этапе подготовки сметы, благодаря нашим продуманным дизайн
+                    проектам, мы учтем все ньюансы, а стоимость заказываемых вами работ будет фиксированной.
+                    Позвольте себе жить красиво.</p>
+                <p class="text_page_repair">Мы разбираемся во всех токостях инженерных систем.
+                    Все, что скрыто для глаза, но является основополагающим для функционирования тепла, воды и света в доме.</p>
+                <p class="text_page_repair">Мы, на доступном языке, расскажем о лучших технических решениях под
+                    ваши задачи и воплотим их в жизнь.</p>
+            </div>
+            <div class="block_img_gallery_repair">
+                <img src="{% static 'main/img/img_repair_3.jpg' %}" class="img_repair_gallery">
+                <img src="{% static 'main/img/img_repair_4.jpg' %}" class="img_repair_gallery">
+                <img src="{% static 'main/img/img_repair_5.jpg' %}" class="img_repair_gallery">
+            </div>
+        </div>
+        <div class="container_list_repair">
+            <div class="min_container_list_repair">
+                <img src="{% static 'main/img/icons_email_list.png' %}">
+                <p class="text_list_repair">Оставляете заявку на сайте или по телефону</p>
+            </div>
+            <div class="min_container_list_repair">
+                <img src="{% static 'main/img/icons_plan_list.png' %}">
+                <p class="text_list_repair">Встречаемся на объекте, выявляем потребности, составляем проект и смету</p>
+            </div>
+            <div class="min_container_list_repair">
+                <img src="{% static 'main/img/icons_tools_list.png' %}">
+                <p class="text_list_repair">Выполняем согласованные работы в оговоренные сроки</p>
+            </div>
+            <div class="min_container_list_repair">
+                <img src="{% static 'main/img/icons_done_list.png' %}">
+                <p class="text_list_repair">Принимаете выполненные работы</p>
+            </div>
+        </div>
+    </div>
+
+    <div class="block_text_page_3">
+        <div class="title_description">
+            <h3>Оставьте контакты прямо сейчас, мы свяжемся с Вами!</h3>
+        </div>
+        <form method="POST">
+            {% csrf_token %}
+            <div class="mb-3">
+                <label class="form-label">Ваше имя</label>
+                <input type="text" class="form-control" name="name" required>
+            </div>
+            <div class="mb-3">
+                <label class="form-label">Email</label>
+                <input type="email" class="form-control" name="email" required>
+            </div>
+            <div class="mb-3">
+                <label class="form-label">Контактный телефон</label>
+                <input type="number" name="number" class="form-control" required>
+            </div>
+            <div class="mb-3">
+                <label class="form-label">Сообщение</label>
+                <input type="text" name="message" class="form-control" required>
+            </div>
+            {{ form }}
+            <button type="submit" class="btn btn-primary">Отправить</button>
+        </form>
+    </div>
+</div>
+{% endblock %}

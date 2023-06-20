@@ -1,0 +1,56 @@
+{% extends 'main/layout.html' %}
+{% load static %}
+
+{% block title %}АрхСтиль - Проекты{% endblock %}
+
+{% block content %}
+
+<div class="secondary_page">
+    <div class="header_block_1_contacts">
+        <header>
+            <div class="header_1_secondary">
+                <a href="{% url 'services' %}" class="header_text_secondary">Услуги</a>
+                <a href="{% url 'repair' %}" class="header_text_secondary">Ремонт и отделка</a>
+                <a href="{% url 'projects' %}" class="header_text_secondary">Проекты</a>
+
+            </div>
+            <a href="{% url 'index' %}">
+                <div class="block_logo">
+                    <img src="{% static 'main/img/main_logo_black.png' %}">
+                </div>
+            </a>
+            <div class="header_2_secondary">
+                <a href="{% url 'reviews' %}" class="header_text_secondary">Отзывы</a>
+                <a href="{% url 'contacts' %}" class="header_text_secondary">Контакты</a>
+                <a href="{% url 'designing' %}" class="header_text_secondary">Проектирование домов</a>
+            </div>
+        </header>
+    </div>
+
+    <div class="main_container_reviews">
+        <div class="block_text_page_contacts">
+            <p class="text_page_contacts3"><a href="{% url 'index' %}">Главная</a> / Проекты</p>
+            <h1 class="title_h1b">ПРОЕКТЫ</h1>
+            <div class="block_content_contacts">
+                <div class="block_content_contacts_min">
+                    <p class="text_page_reviews1">Больше наших работ можно посмотреть в нашей официальной <a
+                            href="https://vk.com/astyle35">группе Вконтакте</a></p>
+                </div>
+            </div>
+        </div>
+
+        <div class="container_portfolio_projects">
+            {% for item in projects %}
+            <div class="card" style="width: 30rem; margin-bottom: 50px;">
+                <img src="{{ item.image_1.url }}" class="card-img-top" alt="...">
+                <div class="card-body">
+                    <h5 class="card_title_projects">{{ item.name }}</h5>
+                    <a type="button" href="{% url 'cards' item.pk %}" class="link_projects">Смотреть больше</a>
+                </div>
+            </div>
+            {% endfor %}
+        </div>
+    </div>
+</div>
+
+{% endblock %}

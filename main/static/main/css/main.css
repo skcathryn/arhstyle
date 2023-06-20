@@ -1,0 +1,700 @@
+@font-face {
+	font-family: 'GothamPro';
+	src: url(../fonts/gothampro.ttf) format('truetype');
+}
+
+@font-face {
+	font-family: 'GothamLight';
+	src: url(../fonts/gothampro_light.ttf) format('truetype');
+}
+
+@font-face {
+	font-family: 'GothamBold';
+	src: url(../fonts/gothampro_bold.ttf) format('truetype');
+}
+
+@font-face {
+	font-family: 'GothamMedium';
+	src: url(../fonts/gothampro_medium.ttf) format('truetype');
+}
+
+/*Скролл*/
+::-webkit-scrollbar {
+  width: 4px;
+}
+
+::-webkit-scrollbar-track {
+  -webkit-box-shadow: 5px 5px 5px -5px rgba(34, 60, 80, 0.2) inset;
+  background-color: none;
+  border-radius: 10px;
+}
+
+::-webkit-scrollbar-thumb {
+  border-radius: 10px;
+  background: rgba(239, 239, 239, 1);
+}
+
+
+/*Страница layout*/
+
+.header_1_secondary{
+    width: 470px;
+    border-bottom: 1px solid black;
+    display: flex;
+    justify-content: space-between;
+    height: 91px;
+}
+
+.header_2_secondary{
+    width: 470px;
+    border-bottom: 1px solid black;
+    display: flex;
+    justify-content: space-between;
+    height: 91px;
+}
+
+.header_text_secondary{
+    font-size: 20px;
+    margin-top: 42px;
+    margin-bottom: 15px;
+    color: black;
+}
+
+.block_contacts{
+    height: 5vh;
+}
+
+.block_min_contacts{
+    width: 1170px;
+    color: white;
+    height: 100%;
+    margin: 0 auto;
+    display: flex;
+    justify-content: space-between;
+}
+
+.block_min_contacts_text{
+    display: flex;
+    align-items: center;
+    height: 100%;
+}
+
+.block_contacts img{
+    height: 20px;
+}
+
+.text_contacts{
+    font-family: 'GothamPro';
+    margin: 0;
+    padding-left: 15px;
+    color: white;
+}
+
+footer{
+    width: 100%;
+    height: 30vh;
+    background-color: rgba(44, 51, 62, 1);
+}
+
+.container_footer{
+    width:1170px;
+    margin: 0 auto;
+    padding-top: 40px;
+    display: flex;
+    justify-content: space-between;
+}
+
+.footer_navigation_container{
+    display: flex;
+    flex-direction: column;
+}
+
+h4{
+    color: rgba(89, 96, 106, 1);
+}
+
+.footer_navigation{
+    color: white;
+}
+
+.footer_logo{
+    width: 3vw;
+}
+
+.footer_icons{
+    width: 30px;
+}
+
+/*Общее у второстепенных страниц*/
+
+.secondary_page{
+    background-color: rgba(254, 254, 254, 1);
+    padding-bottom: 120px;
+}
+
+.header_block_1_contacts{
+    width: 100%;
+    background-color: rgba(254, 254, 254, 1);
+}
+
+
+/*Первый экран*/
+
+body{
+    width: 100vw;
+    margin: 0;
+    background-color: rgba(44, 51, 62, 1);
+    font-family: 'GothamPro' !important;
+    overflow-x:hidden;
+}
+
+.header_block_1{
+    width: 100%;
+    height: 95vh;
+}
+
+.header_block_fon{
+    margin:0 auto;
+    display: flex;
+}
+
+.header_block_fon img{
+    width: 33.33vw;
+    height: 95vh;
+    object-fit: cover;
+}
+
+.header_block_2{
+    background: rgba(70, 70, 70, 0.4);
+    width: 100%;
+    height: 95vh;
+    margin: 0;
+    position: absolute;
+}
+
+.block_main_page{
+    width: 1170px;
+    margin: 0 auto;
+    height: 100%;
+}
+
+header{
+    width: 1170px;
+    margin: 0 auto;
+    display: flex;
+    justify-content: space-between;
+}
+
+a{
+    text-decoration: none;
+}
+
+.header_1{
+    width: 470px;
+    border-bottom: 1px solid white;
+    display: flex;
+    justify-content: space-between;
+    height: 91px;
+}
+
+.header_text{
+    font-size: 20px;
+    margin-top: 42px;
+    margin-bottom: 15px;
+    color: white;
+}
+
+a:hover{
+    color: rgba(249, 180, 116, 1);
+}
+
+.block_logo{
+    padding-top: 25px;
+    height: 61px;
+}
+
+.block_logo img{
+    object-fit: cover;
+    height: 60px;
+}
+
+.header_2{
+    width: 470px;
+    border-bottom: 1px solid white;
+    display: flex;
+    justify-content: space-between;
+    height: 91px;
+}
+
+.block_title{
+    margin-top: 195px;
+}
+
+.title_text{
+    font-size: 72px;
+    color: white;
+    font-family: GothamLight !important;
+    text-align: center;
+    letter-spacing: 0.065em;
+    line-height: 100px;
+    margin-bottom: 40px;
+}
+
+.title_text_second{
+    font-size: 36px;
+    color: white;
+    font-family: GothamLight !important;
+    text-align: center;
+    letter-spacing: 0.065em;
+    line-height: 40px;
+}
+
+.block_arrow{
+    margin: 0 auto;
+
+}
+
+.arrow{
+    display: flex;
+    justify-content: space-between;
+    margin: 0 auto;
+}
+
+
+/*Второй экран*/
+
+.main_block_page_black{
+    background-image: url(../img/logo_fon.png);
+    height: 100%;
+    background-repeat: no-repeat;
+    background-position: bottom left;
+    width: 100%;
+    padding-bottom: 120px;
+}
+
+.block_title_page{
+    display: flex;
+    justify-content: space-between;
+    padding-top: 100px;
+    align-items: center;
+}
+
+.hr_p21{
+    width: 300px;
+    margin: 0;
+    background-color: white;
+    height: 2px;
+
+}
+
+.hr_p22{
+    width: 1292px;
+    margin: 0;
+    background-color: white;
+    height: 2px;
+    text-align: right;
+}
+
+.title_h1{
+    font-size: 3vw;
+    color: white;
+    font-family: GothamBold !important;
+}
+
+.block_text_page_2{
+    width: 1170px;
+    margin: 0 auto;
+    margin-top: 60px;
+}
+
+.text_page21{
+    color: white;
+    width: 100%;
+    font-weight: 500;
+    font-size: 22px;
+    line-height: 33px;
+}
+
+.text_page22{
+    font-weight: 400;
+    font-size: 18px;
+    line-height: 27px;
+    color: white;
+    font-family: GothamLight !important;
+    margin-top: 30px;
+}
+
+
+/* Третья страница */
+
+.main_block_page_white{
+    height: 100%;
+    width: 100%;
+    background-color: rgba(254, 254, 254, 1);
+    padding-bottom: 120px;
+}
+
+.hr_p31{
+    width: 300px;
+    margin: 0;
+    background-color: black;
+    height: 2px;
+}
+
+.hr_p32{
+    width: 960px;
+    margin: 0;
+    background-color: black;
+    height: 2px;
+    text-align: right;
+}
+
+h3{
+    font-weight: 500;
+    font-size: 22px;
+    line-height: 27px;
+    font-family: GothamMedium;
+    margin-bottom: 0;
+}
+
+.text_page3{
+    font-weight: 400;
+    font-size: 18px;
+    line-height: 27px;
+    margin: 0;
+}
+
+.block_text_page_3{
+    width: 1170px;
+    margin: 0 auto;
+    margin-top: 60px;
+}
+
+/* Блоки с информацией третьей страницы */
+
+.min_block_p3{
+    display: flex;
+    align-items: center;
+    padding-bottom: 20px
+}
+
+.min_block_p3 img{
+    width: 45px;
+}
+
+.min_min_block_p3{
+    padding-left: 30px;
+}
+
+
+/*Четвертый экран*/
+
+.hr_p41{
+    width: 300px;
+    margin: 0;
+    background-color: white;
+    height: 2px;
+
+}
+
+.title_h1b{
+    font-size: 3vw;
+    color: black;
+    font-family: GothamBold !important;
+}
+
+.hr_p42{
+    width: 895px;
+    margin: 0;
+    background-color: white;
+    height: 2px;
+    text-align: right;
+}
+
+.text_page21{
+    color: white;
+    width: 100%;
+    font-weight: 500;
+    font-size: 22px;
+    line-height: 33px;
+}
+
+.text_page22{
+    font-weight: 400;
+    font-size: 18px;
+    line-height: 27px;
+    color: white;
+    font-family: GothamLight !important;
+    margin-top: 30px;
+}
+
+.title_description{
+    margin-bottom: 20px;
+}
+
+button:hover{
+    background-color: rgba(249, 180, 116, 1) !important;
+    border-color: rgba(249, 180, 116, 1) !important;
+}
+
+button{
+    background-color:rgba(226, 69, 20, 1) !important;
+    border-color: rgba(226, 69, 20, 1) !important;
+}
+
+/*Страница о нас*/
+
+.main_container_contacts{
+    height: 100%;
+    width: 100%;
+}
+
+.block_content_contacts{
+    display: flex;
+    justify-content: space-between;
+    margin-top: 85px;
+}
+
+.block_content_contacts_min{
+    display: flex;
+    align-items: flex-start;
+    padding-bottom: 35px;
+}
+
+.block_content_contacts_min a{
+    color:rgba(226, 69, 20, 1);
+}
+
+.block_content_contacts_min a:hover{
+    color: rgba(249, 180, 116, 1);
+}
+
+.block_text_page_contacts{
+    color: black;
+    padding-top: 100px;
+    width: 1170px;
+    margin: 0 auto;
+}
+
+.block_text_page_contacts a{
+    text-decoration: none;
+    color: rgba(226, 69, 20, 1);
+}
+
+.text_page_contacts1{
+    font-weight: 500;
+    font-size: 22px;
+    line-height: 33px;
+    font-family: 'GothamBold';
+    width: 12vw;
+}
+
+.text_page_contacts2{
+    font-weight: 400;
+    font-size: 18px;
+    line-height: 27px;
+	font-family: 'GothamMedium';
+	margin: 0;
+}
+
+.text_page_contacts3{
+    font-family: 'GothamLight';
+    margin-bottom: 10px;
+}
+
+.block_text_page_contacts_second{
+    width: 1170px;
+    margin: 0 auto;
+    color: black;
+}
+
+
+/*Страница отзывов*/
+
+.main_container_reviews{
+    width: 1170px;
+    margin: 0 auto;
+}
+
+.text_page_reviews1{
+    font-weight: 500;
+    font-size: 18px;
+    line-height: 26px;
+    font-family: 'GothamPro';
+    margin: 0;
+}
+
+.main_container_comments{
+    display: flex;
+    flex-direction: column-reverse;
+    padding-top: 85px;
+}
+
+.container_comment{
+    padding-top: 30px;
+}
+
+.card_title{
+    font-family: 'GothamBold';
+    font-size: 22px;
+}
+
+.card_date{
+    font-family: 'GothamLight' !important;
+    font-size: 16px;
+}
+
+
+/*Страница услуг*/
+
+.container_services{
+    padding-top: 50px;
+    display: flex;
+    justify-content: space-between;
+}
+
+.min_container_services{
+    margin-bottom: 30px;
+}
+
+.container_services a{
+    color:rgba(226, 69, 20, 1);
+}
+
+.container_services a:hover{
+    color: rgba(249, 180, 116, 1);
+}
+
+.blocks_card{
+    display: flex;
+        justify-content: space-between;
+}
+
+.link_catd_services{
+    color: rgba(249, 180, 116, 1);
+}
+
+
+/*Страница ремонта*/
+
+.block_content_repair{
+    margin-top: 85px;
+    display: flex;
+    justify-content: space-between;
+}
+
+.block_text_repair{
+    width: 42vw;
+    padding-bottom: 30px;
+}
+
+.text_page_repair{
+    font-weight: 500;
+    font-size: 18px;
+    line-height: 26px;
+    font-family: 'GothamPro';
+    margin: 0;
+    padding-top: 15px;
+}
+
+.block_img_repair{
+    position: absolute;
+    padding-top: 29vh;
+    padding-left: 8vw;
+}
+
+.img_repair{
+    width: 19vw;
+}
+
+.img_repair_gallery{
+    width: 18vw;
+
+}
+
+.block_content_repair_gallery{
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+    margin-top: 85px;
+}
+
+
+.block_img_gallery_repair{
+    display: flex;
+    flex-direction: column;
+}
+
+.block_text_repair li{
+    list-style-type: none;
+}
+
+.block_text_repair li:before {
+    content: "- ";
+}
+
+.container_list_repair{
+    display: flex;
+    margin-top: 85px;
+    justify-content: space-between;
+}
+
+.min_container_list_repair{
+    width: 250px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.text_list_repair{
+    text-align: center;
+}
+
+/*Страница проектов*/
+
+.container_portfolio_projects{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    padding-top: 50px;
+}
+
+.card_title_projects{
+    padding-top: 10px;
+    padding-bottom: 15px;
+}
+
+.link_projects{
+    color: rgba(226, 69, 20, 1);
+}
+
+
+/*Страница карточек*/
+
+.container_card_img_cards{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    margin-top: 85px;
+}
+
+.card_img_cards{
+    width: 25vw;
+    margin-bottom: 50px;
+    object-fit: cover;
+}
+
+
+.card_img_cards {
+    transition: 1.5s;
+}
+.card_img_cards:hover {
+    transform: scale(1.8);
+}
+
+/*Страница проектирования*/
+
+.block_content_designing{
+    margin-top: 85px;
+    padding-bottom: 35px;
+}

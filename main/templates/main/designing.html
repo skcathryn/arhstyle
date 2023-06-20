@@ -1,0 +1,86 @@
+{% extends 'main/layout.html' %}
+{% load static %}
+
+{% block title %}АрхСтиль - Проектирование домов{% endblock %}
+
+{% block content %}
+
+<div class="secondary_page">
+    <div class="header_block_1_contacts">
+        <header>
+            <div class="header_1_secondary">
+                <a href="{% url 'services' %}" class="header_text_secondary">Услуги</a>
+                <a href="{% url 'repair' %}" class="header_text_secondary">Ремонт и отделка</a>
+                <a href="{% url 'projects' %}" class="header_text_secondary">Проекты</a>
+
+            </div>
+            <a href="{% url 'index' %}">
+                <div class="block_logo">
+                    <img src="{% static 'main/img/main_logo_black.png' %}">
+                </div>
+            </a>
+            <div class="header_2_secondary">
+                <a href="{% url 'reviews' %}" class="header_text_secondary">Отзывы</a>
+                <a href="{% url 'contacts' %}" class="header_text_secondary">Контакты</a>
+                <a href="{% url 'designing' %}" class="header_text_secondary">Проектирование домов</a>
+            </div>
+        </header>
+    </div>
+
+    <div class="main_container_reviews">
+        <div class="block_text_page_contacts">
+
+            <p class="text_page_contacts3"><a href="{% url 'index' %}">Главная</a> / Проектирование домов</p>
+            <h1 class="title_h1b">ПРОЕКТИРОВАНИЕ ДОМОВ</h1>
+        </div>
+
+        <div class="block_content_designing">
+            <p class="text_page_reviews1">Команда архитекторов и дизайнеров студии "АрхСтиль"
+                спроектирует для Вас дом, отвечающий всем Вашим требованиям и современным тенденциям в
+                строительстве. В основу проектирования домов в нашей студии положена совместная работа
+                архитектора и дизайнера, что позволяет создавать дома с максимально продуманными
+                планировочными решениями, а также избегать лишних финансовых затрат в будущем ремонте,
+                когда дизайнер начинает дорабатывать уже построенный дом по проекту архитектора (менять
+                высоты проемов, прятать трубы, двигать перегородки и т.п.).</p><br>
+            <p class="text_page_reviews1">Мы проектируем дома из различных материалов, в том числе из
+                клееного бруса, делаем все необходимые инженерные разделы, рассчитаем сметы. Поможем с
+                выбором подрядчика для строительства.</p>
+            <p class="text_page_reviews1">Помимо архитектурных проектов для нового строительства наша студия
+                разрабатывает проекты реконструкции частных домов.</p>
+
+            <img src="{% static 'main/img/img_designing.jpg' %}">
+            <img src="{% static 'main/img/img_designing_2.jpg' %}">
+            <p class="text_page_reviews1"> В нашей студии Вы можете заказать проект деревянного дома из
+                бруса или бревна. Мы подготовим для Вас несколько эскизных вариантов и рабочую документацию с
+                разбревновкой для производства.</p>
+        </div>
+
+        <div class="block_text_page_3">
+            <div class="title_description">
+                <h3>Оставьте контакты прямо сейчас, мы свяжемся с Вами!</h3>
+            </div>
+            <form method="POST">
+                {% csrf_token %}
+                <div class="mb-3">
+                    <label class="form-label">Ваше имя</label>
+                    <input type="text" class="form-control" name="name" required>
+                </div>
+                <div class="mb-3">
+                    <label class="form-label">Email</label>
+                    <input type="email" class="form-control" name="email" required>
+                </div>
+                <div class="mb-3">
+                    <label class="form-label">Контактный телефон</label>
+                    <input type="number" name="number" class="form-control" required>
+                </div>
+                <div class="mb-3">
+                    <label class="form-label">Сообщение</label>
+                    <input type="text" name="message" class="form-control" required>
+                </div>
+                {{ form }}
+                <button type="submit" class="btn btn-primary">Отправить</button>
+            </form>
+        </div>
+    </div>
+</div>
+{% endblock %}

@@ -1,0 +1,100 @@
+{% extends 'main/layout.html' %}
+{% load static %}
+
+{% block title %}АрхСтиль - Контакты{% endblock %}
+
+{% block content %}
+<div class="secondary_page">
+    <div class="header_block_1_contacts">
+        <header>
+            <div class="header_1_secondary">
+                <a href="{% url 'services' %}" class="header_text_secondary">Услуги</a>
+                <a href="{% url 'repair' %}" class="header_text_secondary">Ремонт и отделка</a>
+                <a href="{% url 'projects' %}" class="header_text_secondary">Проекты</a>
+
+            </div>
+            <a href="{% url 'index' %}">
+                <div class="block_logo">
+                    <img src="{% static 'main/img/main_logo_black.png' %}">
+                </div>
+            </a>
+            <div class="header_2_secondary">
+                <a href="{% url 'reviews' %}" class="header_text_secondary">Отзывы</a>
+                <a href="{% url 'contacts' %}" class="header_text_secondary">Контакты</a>
+                <a href="{% url 'designing' %}" class="header_text_secondary">Проектирование домов</a>
+            </div>
+        </header>
+    </div>
+
+
+    <div class="main_container_contacts">
+        <div class="block_text_page_contacts">
+            <p class="text_page_contacts3"><a href="{% url 'index' %}">Главная</a> / Контакты</p>
+            <h1 class="title_h1b">КОНТАКТЫ</h1>
+            <div class="block_content_contacts">
+                <div class="block_content_contacts_min">
+                    <p class="text_page_contacts1">Адрес</p>
+                    <div>
+                        <p class="text_page_contacts2">ул. Ветошкина, д.19, Вологда, 160000</p>
+                        <p class="text_page_contacts3">студия-салон "Архстиль" (студия дизайна, отделочные работы)</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div style="position:relative;overflow:hidden;"><a
+                href="https://yandex.ru/maps/org/arkhstil/82503971542/?utm_medium=mapframe&utm_source=maps"
+                style="color:#eee;font-size:12px;position:absolute;top:0px;">АрхСтиль</a><a
+                href="https://yandex.ru/maps/21/vologda/category/flooring/184107717/?utm_medium=mapframe&utm_source=maps"
+                style="color:#eee;font-size:12px;position:absolute;top:14px;">Напольные покрытия в Вологде</a><a
+                href="https://yandex.ru/maps/21/vologda/category/wallpaper_store/184107709/?utm_medium=mapframe&utm_source=maps"
+                style="color:#eee;font-size:12px;position:absolute;top:28px;">Магазин обоев в Вологде</a>
+            <iframe src="https://yandex.ru/map-widget/v1/?from=tabbar&ll=39.891865%2C59.211521&mode=search&oid=82503971542&ol=biz&source=serp_navig&z=18.18"
+                    width="100%" height="400" frameborder="1" allowfullscreen="true"
+                    style="position:relative;"></iframe>
+        </div>
+        <div class="block_text_page_contacts_second">
+            <div class="block_content_contacts">
+                <div>
+                <div class="block_content_contacts_min">
+                    <p class="text_page_contacts1">Часы работы</p>
+                    <div>
+                        <p class="text_page_contacts2">пн.-пт. с 10:00 до 19-00</p>
+                        <p class="text_page_contacts3">по договоренности</p>
+                    </div>
+                </div>
+                <div class="block_content_contacts_min">
+                    <p class="text_page_contacts1">Телефоны</p>
+                    <div>
+                                                <a class="text_page_contacts2" href="tel:+7 (911) 537-31-16">+7 (911) 537-31-16</a>
+                        <p class="text_page_contacts3">Студия дизайна интерьера</p>
+                        <a class="text_page_contacts2" href="tel:+7 (921) 231-95-30">+7 (921) 231-95-30</a>
+                        <p class="text_page_contacts3">Ремонт и отделка помещений</p>
+                        <a class="text_page_contacts2" href="tel:+7 (8172) 72-71-79">+7 (8172) 72-71-79</a>
+
+                    </div>
+                </div>
+                    </div>
+                <div>
+                <div class="block_content_contacts_min">
+                    <p class="text_page_contacts1">E-mail</p>
+                    <div>
+                        <a class="text_page_contacts2" href="mailto:astyle35@mail.ru">astyle35@mail.ru</a>
+                    </div>
+                </div>
+                <div class="block_content_contacts_min">
+                    <p class="text_page_contacts1">Сайты</p>
+                    <div>
+                        <a class="text_page_contacts2" href="http://ars35.ru">ars35.ru</a>
+                        <p class="text_page_contacts3">студия дизайна</p>
+                        <a class="text_page_contacts2" href="http://arsdecor.ru">arsdecor.ru</a>
+                        <p class="text_page_contacts3">салон-магазин</p>
+                    </div>
+                </div>
+                    </div>
+            </div>
+        </div>
+    </div>
+</div>
+{% endblock %}
+

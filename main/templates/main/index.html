@@ -1,0 +1,199 @@
+{% extends 'main/layout.html' %}
+{% load static %}
+
+
+{% block title %}АрхСтиль - студия интерьерного дизайна в Вологде{% endblock %}
+
+{% block content %}
+
+<div class="header_block_1">
+    <div class="header_block_2">
+        <div class="block_main_page">
+            <header>
+                <div class="header_1">
+                    <a href="{% url 'services' %}" class="header_text">Услуги</a>
+                    <a href="{% url 'repair' %}" class="header_text">Ремонт и отделка</a>
+                    <a href="{% url 'projects' %}" class="header_text">Проекты</a>
+                </div>
+                <a href="{% url 'index' %}">
+                    <div class="block_logo">
+                        <img src="{% static 'main/img/main_logo.png' %}">
+                    </div>
+                </a>
+                <div class="header_2">
+                    <a href="{% url 'reviews' %}" class="header_text">Отзывы</a>
+                    <a href="{% url 'contacts' %}" class="header_text">Контакты</a>
+                    <a href="{% url 'designing' %}" class="header_text">Проектирование домов</a>
+                </div>
+            </header>
+            <div class="block_title">
+                <p class="title_text">ДОБРО ПОЖАЛОВАТЬ В АрхСтиль</p>
+                <p class="title_text_second">Ваш дом - ваша жизнь <br> Создаем интерьеры, наполняющие силой</p>
+            </div>
+            <div class="block_arrow">
+                <img class="arrow" src="{% static 'main/img/arrow.png' %}">
+            </div>
+        </div>
+    </div>
+    <div class="header_block_fon">
+        <img src="{% static 'main/img/img_fon_main_block_1.png' %}">
+        <img src="{% static 'main/img/img_fon_main_block_2.png' %}">
+        <img src="{% static 'main/img/img_fon_main_block_3.png' %}">
+    </div>
+</div>
+
+
+<div class="main_block_page_black">
+    <div class="block_title_page">
+        <div class="hr_p21"></div>
+        <h1 class="title_h1">О НАС</h1>
+        <div class="hr_p22"></div>
+    </div>
+    <div class="block_text_page_2">
+        <p class="text_page21">Компания АрхСтиль - архитектурная студия полного цикла. У нас можно заказать
+            архитектурный проект дома, дизайн проект, выполнение ремонтно-отделочных работ, пошив текстильных
+            изделий.
+            А ещё - полную комплектацию отделочными материалами, сантехникой, светильниками и мебелью. </p>
+        <p class="text_page22">Работаем уже больше 13 лет по всей территории европейской части России.
+            Справляемся даже с самыми сложными задачами. На нашем счету десятки реализованных проектов,
+            крупных государственных и частных заказов. В штате квалифицированные работники, с большим опытом работы.<br>
+            Проектируем с умом и чувством стиля, ремонтируем с соблюдением всех технологий.</p>
+    </div>
+</div>
+
+
+<div class="main_block_page_white">
+    <div class="block_title_page">
+        <div class="hr_p31"></div>
+        <h1 class="title_h1b">ПРЕИМУЩЕСТВА</h1>
+        <div class="hr_p32"></div>
+    </div>
+    <div class="block_text_page_3">
+        <div class="min_block_p3">
+            <img src="{% static 'main/img/icons1.png' %}">
+            <div class="min_min_block_p3">
+                <h3>У нас огромный опыт</h3>
+                <p class="text_page3">Создали и воплотили десятки стильных интерьеров</p>
+            </div>
+        </div>
+        <div class="min_block_p3">
+            <img src="{% static 'main/img/icons2.png' %}">
+            <div class="min_min_block_p3">
+                <h3>Командная работа</h3>
+                <p class="text_page3">Позволяет нам делать быстро и качественно большой объем работы</p>
+            </div>
+        </div>
+        <div class="min_block_p3">
+            <img src="{% static 'main/img/icons3.png' %}">
+            <div class="min_min_block_p3">
+                <h3>Авторские уникальные интерьеры</h3>
+                <p class="text_page3">Следим за появлением новых материалов и технологий и применяем их в
+                    своих проектах</p>
+            </div>
+        </div>
+        <div class="min_block_p3">
+            <img src="{% static 'main/img/icons4.png' %}">
+            <div class="min_min_block_p3">
+                <h3>Подбор чистовых отделочных материалов</h3>
+                <p class="text_page3">Предоставляем полный перечень артикулов, количество и полное название
+                    материалов, а также указываем рекомендуемый запас</p>
+            </div>
+        </div>
+        <div class="min_block_p3">
+            <img src="{% static 'main/img/icons5.png' %}">
+            <div class="min_min_block_p3">
+                <h3>Контроль качества дизайн-проекта</h3>
+                <p class="text_page3">Прежде чем отдать проект заказчику он проверяется руководителем
+                    проекта, а затем инженером-строителем</p>
+            </div>
+        </div>
+        <div class="min_block_p3">
+            <img src="{% static 'main/img/icons6.png' %}">
+            <div class="min_min_block_p3">
+                <h3>Профессиональные чертежи</h3>
+                <p class="text_page3">Мы выполняем чертежи в соотвествии с ГОСТ, подробно вычерчиваем
+                    все сложные конструкции и узлы</p>
+            </div>
+        </div>
+        <div class="min_block_p3">
+            <img src="{% static 'main/img/icons7.png' %}">
+            <div class="min_min_block_p3">
+                <h3>Работаем "под ключ"</h3>
+                <p class="text_page3">Проекты, ремонтно-отделочные работы, материалы, сантехника, свет и мебель.
+                    Отличные цены гарантируем</p>
+            </div>
+        </div>
+        <div class="min_block_p3">
+            <img src="{% static 'main/img/icons8.png' %}">
+            <div class="min_min_block_p3">
+                <h3>Соблюдаем установленные сроки</h3>
+            </div>
+        </div>
+    </div>
+</div>
+
+
+<div class="main_block_page_black">
+    <div class="block_title_page">
+        <div class="hr_p41"></div>
+        <h1 class="title_h1">НАШ КОЛЛЕКТИВ</h1>
+        <div class="hr_p42"></div>
+    </div>
+    <div class="block_text_page_2">
+        <div class="row row-cols-1 row-cols-md-3 g-4">
+            {% for item in workers %}
+            <div class="col">
+                <div class="card" style="width: 20rem;">
+                    <img src="{{ item.image.url }}" style="height: 30rem" class="card-img-top" alt="...">
+                    <div class="card-body">
+                        <h4 class="card-title">{{ item.name }}</h4>
+                        <h5 class="card-title">{{ item.post }}</h5>
+                        <p class="card-text">{{ item.description }}</p>
+                        <p class="card-text">Стаж: более {{ item.experience }} лет</p>
+                    </div>
+                </div>
+            </div>
+            {% endfor %}
+        </div>
+    </div>
+</div>
+
+
+<div class="main_block_page_white">
+    <div class="block_title_page">
+        <div class="hr_p31"></div>
+        <h1 class="title_h1b">НАПИШИТЕ НАМ</h1>
+        <div class="hr_p32"></div>
+    </div>
+
+    <div class="block_text_page_3">
+        <div class="title_description">
+            <h3>Оставьте контакты прямо сейчас, мы свяжемся с Вами!</h3>
+        </div>
+        <form method="POST">
+            {% csrf_token %}
+            <div class="mb-3">
+                <label class="form-label">Ваше имя</label>
+                <input type="text" class="form-control" name="name" required>
+            </div>
+            <div class="mb-3">
+                <label class="form-label">Email</label>
+                <input type="email" class="form-control" name="email" required>
+            </div>
+            <div class="mb-3">
+                <label class="form-label">Контактный телефон</label>
+                <input type="number" name="number" class="form-control" required>
+            </div>
+            <div class="mb-3">
+                <label class="form-label">Сообщение</label>
+                <input type="text" name="message" class="form-control" required>
+            </div>
+            {{ form }}
+            <button type="submit" class="btn btn-primary">Отправить</button>
+        </form>
+    </div>
+</div>
+
+
+{% endblock %}
+

@@ -1,0 +1,418 @@
+{% extends 'main/layout.html' %}
+{% load static %}
+
+{% block title %}АрхСтиль - Услуги{% endblock %}
+
+{% block content %}
+
+<div class="secondary_page">
+    <div class="header_block_1_contacts">
+        <header>
+            <div class="header_1_secondary">
+                <a href="{% url 'services' %}" class="header_text_secondary">Услуги</a>
+                <a href="{% url 'repair' %}" class="header_text_secondary">Ремонт и отделка</a>
+                <a href="{% url 'projects' %}" class="header_text_secondary">Проекты</a>
+
+            </div>
+            <a href="{% url 'index' %}">
+                <div class="block_logo">
+                    <img src="{% static 'main/img/main_logo_black.png' %}">
+                </div>
+            </a>
+            <div class="header_2_secondary">
+                <a href="{% url 'reviews' %}" class="header_text_secondary">Отзывы</a>
+                <a href="{% url 'contacts' %}" class="header_text_secondary">Контакты</a>
+                <a href="{% url 'designing' %}" class="header_text_secondary">Проектирование домов</a>
+            </div>
+        </header>
+    </div>
+
+
+    <div class="main_container_reviews">
+        <div class="block_text_page_contacts">
+            <p class="text_page_contacts3"><a href="{% url 'index' %}">Главная</a> / Услуги</p>
+            <h1 class="title_h1b">УСЛУГИ СТУДИИ</h1>
+            <div class="block_content_contacts">
+                <div class="block_content_contacts_min">
+                    <p class="text_page_reviews1">Дизайн-проект существует для того, чтобы решить все поставленные
+                        Вами задачи до начала ремонтных работ и уберечь Вас от серьезных ошибок и ненужных трат.
+                        В дизайн-проект входят: план геометрии потолка, план раскладки напольных покрытий, развертки
+                        по стенам всех помещений, раскрой обоев, раскладка плитки в санузлах, таблицы с полным подбором
+                        и расчетом всех
+                        материалов "чистовой" отделки с указанием их ориентировочный стоимости, подбор мебели,
+                        подбор сантехники, рекомендации по покупке бытовой технике, проектирование домашнего кинотеатра,
+                        подбор текстиля.</p>
+                </div>
+            </div>
+        </div>
+
+
+        <div class="container_services">
+            <div>
+                <div class="min_container_services">
+                    <div class="card" style="width: 35rem;">
+                        <div class="card-body">
+                            <div class="blocks_card">
+                                <div>
+                                    <h5 class="card-title">Пакет "Базовый"</h5>
+                                    <h6 class="card-subtitle mb-2 text-muted">Дизайн проект</h6>
+                                </div>
+                                <div>
+                                    <a class="link_catd_services" id="click-to-hide_1" type="button">Подробнее</a>
+                                </div>
+                            </div>
+                            <div id="hidden-element_1">
+                                <ol>
+                                    <li>Обмерный план (по необходимости)</li>
+                                    <li>План демонтажных работ</li>
+                                    <li>План возведения перегородок (2-3 варианта)</li>
+                                    <li>Экспликация помещений</li>
+                                    <li>План расстановки мебели</li>
+                                </ol>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="min_container_services">
+                    <div class="card" style="width: 35rem;">
+                        <div class="card-body">
+                            <div class="blocks_card">
+                                <div>
+                                    <h5 class="card-title">Пакет "Минимум"</h5>
+                                    <h6 class="card-subtitle mb-2 text-muted">Дизайн проект</h6>
+                                </div>
+                                <div>
+                                    <a class="link_catd_services" id="click-to-hide_2" type="button">Подробнее</a>
+                                </div>
+                            </div>
+                            <div id="hidden-element_2">
+                                <ol>
+                                    <li>Обмерный план (по необходимости)</li>
+                                    <li>План демонтажных работ</li>
+                                    <li>План возведения перегородок (2-3 варианта)</li>
+                                    <li>Экспликация помещений</li>
+                                    <li>План расстановки мебели (2-3 варианта)</li>
+                                    <li>Разработка стилевой и цветовой концепции интерьера в виде коллажей или эскизных
+                                        разверток стен (2 варианта)
+                                    </li>
+                                </ol>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="min_container_services">
+                    <div class="card" style="width: 35rem;">
+                        <div class="card-body">
+                            <div class="blocks_card">
+                                <div>
+                                    <h5 class="card-title">Пакет "Стандарт"</h5>
+                                    <h6 class="card-subtitle mb-2 text-muted">Дизайн проект</h6>
+                                </div>
+                                <div>
+                                    <a class="link_catd_services" id="click-to-hide_3" type="button">Подробнее</a>
+                                </div>
+                            </div>
+                            <div id="hidden-element_3">
+                                <ol>
+                                    <li>Обмерный план</li>
+                                    <li>План демонтажных работ (по необходимости)</li>
+                                    <li>План возведения перегородок (2-3 варианта)</li>
+                                    <li>Экспликация помещений</li>
+                                    <li>План расстановки мебели (2-3 варианта)</li>
+                                    <li>Разработка стилевой и цветовой концепции интерьера (2 варианта)</li>
+                                    <li>Подбор отделочных материалов для пола и стен</li>
+                                    <li>План пола с указанием видов покрытий</li>
+                                    <li>План потолка (без разрезов)</li>
+                                    <li>Схема расположения светильников с привязкой к выключателям</li>
+                                    <li>Схема расположения розеток и точек слаботочных сетей</li>
+                                    <li>Развертки стен, имеющих сложный декор (несколько видов обоев, ниши, фрески и
+                                        т.п.)
+                                    </li>
+                                    <li>План отделки стен</li>
+                                </ol>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+
+                <div class="min_container_services">
+                    <div class="card" style="width: 35rem;">
+                        <div class="card-body">
+                            <div class="blocks_card">
+                                <div>
+                                    <h5 class="card-title">Ландшафтный дизайн</h5>
+                                </div>
+                                <div>
+                                    <a class="link_catd_services" id="click-to-hide_7" type="button">Подробнее</a>
+                                </div>
+                            </div>
+                            <div id="hidden-element_7">
+                                <p class="card-text">Студия дизайна "АрхСтиль" выполняет проекты ландшафтного дизайна.
+                                    Пример нашего проекта Вы можете посмтреть в этом <a href="{% url 'projects' %}">альбоме</a>.
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="min_container_services">
+                    <div class="card" style="width: 35rem;">
+                        <div class="card-body">
+                            <div class="blocks_card">
+                                <div>
+                                    <h5 class="card-title">Подбор отделочных материалов</h5>
+                                </div>
+                                <div>
+                                    <a class="link_catd_services" id="click-to-hide_8" type="button">Подробнее</a>
+                                </div>
+                            </div>
+                            <div id="hidden-element_8">
+                                <p class="card-text">В нашей студии дизайна мы подберем для вас нужный
+                                    отделочный материал, цвет, фактуру. Наши дизайнеры с легкостью найдут подход
+                                    к воплощению вашей фантазии в реальность.</p>
+                                <p class="card-text">Подбор отделочных материалов с учетом ваших потребностей и
+                                    пожеланий в студии дизайна интерьера АрхСтиль.</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div>
+                <div class="min_container_services">
+                    <div class="card" style="width: 35rem;">
+                        <div class="card-body">
+                            <div class="blocks_card">
+                                <div>
+                                    <h5 class="card-title">Пакет "Оптимальный"</h5>
+                                    <h6 class="card-subtitle mb-2 text-muted">Дизайн проект</h6>
+                                </div>
+                                <div>
+                                    <a class="link_catd_services" id="click-to-hide_5" type="button">Подробнее</a>
+                                </div>
+                            </div>
+                            <div id="hidden-element_5">
+                                <ol>
+                                    <li>Обмерный план</li>
+                                    <li>План расстановки мебели (2-3 варианта)</li>
+                                    <li>План демонтажных работ (по необходимости)</li>
+                                    <li>План монтажных работ. Экспликация помещений.</li>
+                                    <li>План расположения сантехнического оборудования. Рекомендации по покупке
+                                        сантехнического оборудования (раковины, унитазы, смесители, душевые, ванны)
+                                    </li>
+                                    <li>Разработка стилевой и цветовой концепции интерьера в виде коллажей (2
+                                        варианта)
+                                    </li>
+                                    <li>Итоговый вариант стилевой и цветовой концепции интерьера в виде коллажа с учетом
+                                        внесенных корректировок Заказчиком
+                                    </li>
+                                    <li>Подбор "чистовых" отделочных материалов для пола и стен</li>
+                                    <li>План пола с указанием видов покрытий и фактических площадей</li>
+                                    <li>Схема отделки потолка (с разрезами)</li>
+                                    <li>Схема расположения светильников с привязкой к выключателям</li>
+                                    <li>Схема расположения розеток и точек слаботочных сетей</li>
+                                    <li>Литерация стен. План отделки стен</li>
+                                    <li>Развертки стен, имеющих сложный декор (несколько видов обоев, ниши, фрески и
+                                        т.п.)
+                                    </li>
+                                    <li>Спецификация "чистовых" отделочных материалов с указанием наименования,
+                                        артикулов и фактической площади покрытий для пола, стен, потолка
+                                    </li>
+                                    <li>Спецификация заполнения дверных проемов с указанием модели дверей</li>
+                                    <li>Рекомендации по покупке основных предметов мебели (столы, стулья, шкафы, диваны,
+                                        тумбы, комоды, кресла, кровати)
+                                    </li>
+                                    <li>Эскизные чертежи корпусной мебели, изготавливаемой на заказ.</li>
+                                    <li>Рекомендации по покупке светильников (точки, споты, бра, люстры)</li>
+                                </ol>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="min_container_services">
+                    <div class="card" style="width: 35rem;">
+                        <div class="card-body">
+                            <div class="blocks_card">
+                                <div>
+                                    <h5 class="card-title">Пакет "Премиум"</h5>
+                                    <h6 class="card-subtitle mb-2 text-muted">Дизайн проект</h6>
+                                </div>
+                                <div>
+                                    <a class="link_catd_services" id="click-to-hide_4" type="button">Подробнее</a>
+                                </div>
+                            </div>
+                            <div id="hidden-element_4">
+                                <ol>
+                                    <li>Обмерный план (по необходимости)</li>
+                                    <li>План демонтажных работ</li>
+                                    <li>План возведения перегородок (2-3 варианта)</li>
+                                    <li>Экспликация помещений</li>
+                                    <li>План расстановки мебели (2-3 варианта)</li>
+                                    <li>Разработка стилевой и цветовой концепции интерьера в виде коллажей или эскизных
+                                        разверток стен (2 варианта)
+                                    </li>
+                                    <li>Визуализация выбранной планировки (основные помещения)</li>
+                                    <li>Подбор и расчет необходимого количества отделочных материалов для пола и стен
+                                    </li>
+                                    <li>План пола с указанием видов покрытий и площадей</li>
+                                    <li>План потолка (с разрезами по необходимости)</li>
+                                    <li>Схема расположения светильников с привязкой к выключателям</li>
+                                    <li>Схема расположения розеток и точек слаботочных сетей</li>
+                                    <li>Схема расположения теплых полов</li>
+                                    <li>Схема расположения кондиционеров и вент.решеток (по необходимости)</li>
+                                    <li>Развертки стен, имеющих сложный декор (несколько видов обоев, ниши, фрески и
+                                        т.п.)
+                                    </li>
+                                    <li>Развертки стен с раскладкой материала (раскладка плитки, обоев и т.п.)</li>
+                                    <li>Сводная таблица по материалам "чистовой" отделки с указанием наименования
+                                        материала, необходимого количества и ориентировочной стоимости
+                                    </li>
+                                    <li>Ведомость заполнения дверных проемов</li>
+                                </ol>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="min_container_services">
+                    <div class="card" style="width: 35rem;">
+                        <div class="card-body">
+                            <div class="blocks_card">
+                                <div>
+                                    <h5 class="card-title">Пакет "Эксклюзив"</h5>
+                                    <h6 class="card-subtitle mb-2 text-muted">Дизайн проект</h6>
+                                </div>
+                                <div>
+                                    <a class="link_catd_services" id="click-to-hide_6" type="button">Подробнее</a>
+                                </div>
+                            </div>
+                            <div id="hidden-element_6">
+                                <ol>
+                                    <li>Обмерный план</li>
+                                    <li>План расстановки мебели (2-3 варианта)</li>
+                                    <li>План демонтажных работ (по необходимости)</li>
+                                    <li>Экспликация помещений</li>
+                                    <li>План возведения перегородок (2-3 варианта)</li>
+
+                                    <li>План расположения сантехнического оборудования</li>
+                                    <li>Разработка стилевой и цветовой концепции интерьера (2 варианта)</li>
+                                    <li>Визуализация выбранной планировки (фотореалистичные изображения)</li>
+                                    <li>Подбор и расчет необходимого количества отделочных материалов для пола и стен
+                                    </li>
+                                    <li>План пола с указанием видов покрытий и площадей</li>
+                                    <li>План потолка (с разрезами по необходимости)</li>
+                                    <li>Схема расположения светильников с привязкой к выключателям</li>
+                                    <li>Схема расположения розеток и точек слаботочных сетей</li>
+                                    <li>Схема расположения теплых полов</li>
+                                    <li>Схема расположения кондиционеров и вент.решеток (по необходимости)</li>
+                                    <li>Развертки стен</li>
+                                    <li>Сводная таблица по материалам "чистовой" отделки с указанием наименования
+                                        материала,
+                                        необходимого количества и ориентировочной стоимости
+                                    </li>
+                                    <li>Рекомендации по покупке мебели (с указанием конкретной модели)</li>
+                                    <li>Эскизные чертежи корпусной мебели, изготавливаемой на заказ.</li>
+                                    <li>Рекомендации по покупке кухонной техники (с указанием конкретной модели)</li>
+                                    <li>Рекомендации по покупке светильников (люстры, бра)</li>
+                                    <li>Подбор текстиля</li>
+                                    <li>Рекомендации по покупке сантехнического оборудования</li>
+                                    <li>Спецификация заполнения дверных проемов</li>
+                                    <li>Авторский надзор в течение 2-х месяцев (при условии, что проект будет запущен в
+                                        работу не позже, чем через 2 месяца после его передачи Заказчику) - бонус
+                                    </li>
+                                </ol>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="min_container_services">
+                    <div class="card" style="width: 35rem;">
+                        <div class="card-body">
+                            <div class="blocks_card">
+                                <div>
+                                    <h5 class="card-title">Консультация с выездом</h5>
+                                </div>
+                                <div>
+                                    <a class="link_catd_services" id="click-to-hide_9" type="button">Подробнее</a>
+                                </div>
+                            </div>
+                            <div id="hidden-element_9">
+                                <p class="card-text">Выезд дизайнера на объект или в магазин, подробный ответ на любые
+                                    ваши вопросы по поводу интерьера.</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="min_container_services">
+                    <div class="card" style="width: 35rem;">
+                        <div class="card-body">
+                            <div class="blocks_card">
+                                <div>
+                                    <h5 class="card-title">Авторское сопровождение</h5>
+                                </div>
+                                <div>
+                                    <a class="link_catd_services" id="click-to-hide_10" type="button">Подробнее</a>
+                                </div>
+                            </div>
+                            <div id="hidden-element_10">
+                                <p class="card-text">Посещение объекта дизайнером несколько раз в месяц с целью
+                                    обеспечения ведения строительных работ согласно дизайн-проекта, а также решение
+                                    непредвиденных задач в ходе ведения данных работ.</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="block_text_page_3">
+        <div class="title_description">
+            <h3>Оставьте контакты прямо сейчас, мы свяжемся с Вами!</h3>
+        </div>
+        <form method="POST">
+            {% csrf_token %}
+            <div class="mb-3">
+                <label class="form-label">Ваше имя</label>
+                <input type="text" class="form-control" name="name" required>
+            </div>
+            <div class="mb-3">
+                <label class="form-label">Email</label>
+                <input type="email" class="form-control" name="email" required>
+            </div>
+            <div class="mb-3">
+                <label class="form-label">Контактный телефон</label>
+                <input type="number" name="number" class="form-control" required>
+            </div>
+            <div class="mb-3">
+                <label class="form-label">Сообщение</label>
+                <input type="text" name="message" class="form-control" required>
+            </div>
+            {{ form }}
+            <button type="submit" class="btn btn-primary">Отправить</button>
+        </form>
+    </div>
+</div>
+
+{% endblock %}
+<!--    <div class="row row-cols-1 row-cols-md-3 g-4">-->
+<!--        {% for item in products %}-->
+<!--         <div class="col">-->
+<!--            <div class="card" style="width: 20rem;">-->
+<!--                <img src="{{ item.image.url }}" style="height: 50rem" class="card-img-top" alt="...">-->
+<!--                <div class="card-body">-->
+<!--                    <h5 class="card-title">{{ item.name }}</h5>-->
+<!--                    <p class="card-text">{{ item.year }} год</p>-->
+<!--                    <p class="card-text">{{ item.price }} руб</p>-->
+<!--                    <a href="{% url 'cards' item.pk %}" class="btn btn-primary">Перейти</a>-->
+<!--                </div>-->
+<!--            </div>-->
+<!--         </div>-->
+<!--        {% endfor %}-->
+<!--    </div>-->

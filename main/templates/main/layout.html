@@ -1,0 +1,215 @@
+{% load static %}
+
+<!doctype html>
+<html lang=ru>
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport"
+          content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="icon" href="{% static 'main/img/favicon.png' %}">
+    <link rel="stylesheet" href="{% static 'main/css/bootstrap.min.css' %}">
+    <link rel="stylesheet" href="{% static 'main/css/main.css' %}" type="text/css">
+    <title>{% block title %}{% endblock %}</title>
+</head>
+<body>
+
+<div class="block_contacts">
+    <div class="block_min_contacts">
+        <div class="block_min_contacts_text">
+            <img src="{% static 'main/img/icons_phone.png' %}">
+            <a class="text_contacts" href="tel:+7 911 537-31-16">+7 911 537-31-16</a>
+            <a class="text_contacts" href="tel:+7 8172 72-71-79">+7 8172 72-71-79</a>
+        </div>
+        <div class="block_min_contacts_text">
+            <img src="{% static 'main/img/icons_email.png' %}">
+            <a class="text_contacts" data-bs-toggle="modal" data-bs-target="#exampleModal">НАПИШИТЕ НАМ</a>
+        </div>
+    </div>
+</div>
+
+<div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+    <div class="modal-dialog">
+        <div class="modal-content">
+            <div class="modal-header">
+                <h1 class="modal-title fs-5" id="exampleModalLabel">Напишите нам</h1>
+                <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+            </div>
+            <div class="modal-body">
+                <form method="POST">
+                    {% csrf_token %}
+                    <div class="mb-3">
+                        <input type="text" name="name" class="form-control" placeholder="Ваше имя" required>
+                    </div>
+                    <div class="mb-3">
+                        <input type="email" name="email" class="form-control" placeholder="Email" required>
+                    </div>
+                    <div class="mb-3">
+                        <input type="number" name="number" class="form-control" placeholder="Контактный телефон"
+                               required>
+                    </div>
+                    <div class="mb-3">
+                        <input type="text" name="message" class="form-control" placeholder="Сообщение" required>
+                    </div>
+                    {{ form }}
+                    <div class="modal-footer">
+                        <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Закрыть</button>
+                        <button type="submit" class="btn btn-primary">Отправить</button>
+                    </div>
+                </form>
+            </div>
+        </div>
+    </div>
+</div>
+
+{% block content %}
+{% endblock %}
+
+<footer>
+    <div class="container_footer">
+        <div class="footer_navigation_container">
+            <h4>Меню</h4>
+            <a href="{% url 'index' %}" class="footer_navigation">Главная</a>
+            <a href="{% url 'services' %}" class="footer_navigation">Услуги</a>
+            <a href="{% url 'repair' %}" class="footer_navigation">Ремонт и отделка</a>
+            <a href="{% url 'projects' %}" class="footer_navigation">Проекты</a>
+            <a href="{% url 'reviews' %}" class="footer_navigation">Отзывы</a>
+            <a href="{% url 'contacts' %}" class="footer_navigation">Контакты</a>
+            <a href="{% url 'designing' %}" class="footer_navigation">Проектирование домов</a>
+        </div>
+        <div>
+            <h4>Социальные сети</h4>
+            <a href="https://vk.com/astyle35">
+                <img src="{% static 'main/img/icons_vk.png' %}" class="footer_icons">
+            </a>
+        </div>
+        <div>
+            <img src="{% static 'main/img/logo_fon_white.png' %}" class="footer_logo">
+        </div>
+
+
+    </div>
+</footer>
+<script src="{% static 'main/js/bootstrap.bundle.min.js' %}"></script>
+<script>
+  document.addEventListener("DOMContentLoaded", hiddenCloseclick());
+  document.getElementById('click-to-hide_1').addEventListener("click", hiddenCloseclick);
+	function hiddenCloseclick() {
+	let x = document.getElementById('hidden-element_1');
+      if (x.style.display == "none"){
+	  x.style.display = "block";
+	  } else {
+	 x.style.display = "none"}
+    };
+
+</script>
+<script>
+  document.addEventListener("DOMContentLoaded", hiddenCloseclick());
+  document.getElementById('click-to-hide_2').addEventListener("click", hiddenCloseclick);
+	function hiddenCloseclick() {
+	let x = document.getElementById('hidden-element_2');
+      if (x.style.display == "none"){
+	  x.style.display = "block";
+	  } else {
+	 x.style.display = "none"}
+    };
+
+</script>
+<script>
+  document.addEventListener("DOMContentLoaded", hiddenCloseclick());
+  document.getElementById('click-to-hide_3').addEventListener("click", hiddenCloseclick);
+	function hiddenCloseclick() {
+	let x = document.getElementById('hidden-element_3');
+      if (x.style.display == "none"){
+	  x.style.display = "block";
+	  } else {
+	 x.style.display = "none"}
+    };
+
+</script>
+<script>
+  document.addEventListener("DOMContentLoaded", hiddenCloseclick());
+  document.getElementById('click-to-hide_4').addEventListener("click", hiddenCloseclick);
+	function hiddenCloseclick() {
+	let x = document.getElementById('hidden-element_4');
+      if (x.style.display == "none"){
+	  x.style.display = "block";
+	  } else {
+	 x.style.display = "none"}
+    };
+
+</script>
+<script>
+  document.addEventListener("DOMContentLoaded", hiddenCloseclick());
+  document.getElementById('click-to-hide_5').addEventListener("click", hiddenCloseclick);
+	function hiddenCloseclick() {
+	let x = document.getElementById('hidden-element_5');
+      if (x.style.display == "none"){
+	  x.style.display = "block";
+	  } else {
+	 x.style.display = "none"}
+    };
+
+</script>
+<script>
+  document.addEventListener("DOMContentLoaded", hiddenCloseclick());
+  document.getElementById('click-to-hide_6').addEventListener("click", hiddenCloseclick);
+	function hiddenCloseclick() {
+	let x = document.getElementById('hidden-element_6');
+      if (x.style.display == "none"){
+	  x.style.display = "block";
+	  } else {
+	 x.style.display = "none"}
+    };
+
+</script>
+<script>
+  document.addEventListener("DOMContentLoaded", hiddenCloseclick());
+  document.getElementById('click-to-hide_7').addEventListener("click", hiddenCloseclick);
+	function hiddenCloseclick() {
+	let x = document.getElementById('hidden-element_7');
+      if (x.style.display == "none"){
+	  x.style.display = "block";
+	  } else {
+	 x.style.display = "none"}
+    };
+
+</script>
+<script>
+  document.addEventListener("DOMContentLoaded", hiddenCloseclick());
+  document.getElementById('click-to-hide_8').addEventListener("click", hiddenCloseclick);
+	function hiddenCloseclick() {
+	let x = document.getElementById('hidden-element_8');
+      if (x.style.display == "none"){
+	  x.style.display = "block";
+	  } else {
+	 x.style.display = "none"}
+    };
+
+</script>
+<script>
+  document.addEventListener("DOMContentLoaded", hiddenCloseclick());
+  document.getElementById('click-to-hide_9').addEventListener("click", hiddenCloseclick);
+	function hiddenCloseclick() {
+	let x = document.getElementById('hidden-element_9');
+      if (x.style.display == "none"){
+	  x.style.display = "block";
+	  } else {
+	 x.style.display = "none"}
+    };
+
+</script>
+<script>
+  document.addEventListener("DOMContentLoaded", hiddenCloseclick());
+  document.getElementById('click-to-hide_10').addEventListener("click", hiddenCloseclick);
+	function hiddenCloseclick() {
+	let x = document.getElementById('hidden-element_10');
+      if (x.style.display == "none"){
+	  x.style.display = "block";
+	  } else {
+	 x.style.display = "none"}
+    };
+
+</script>
+</body>
+</html>
